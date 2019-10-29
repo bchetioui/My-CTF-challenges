@@ -34,10 +34,10 @@ Tag: **Crypto**, **RSA**
 
 ### Write-ups
 
-* [Asterix45](https://rtfm.re/writeups/Asterix45.html)
+* [Asterix45 (FR)](https://rtfm.re/writeups/Asterix45.html)
 * [Furlow](https://rtfm.re/writeups/Furlow.html)
-* [Shutdown](https://rtfm.re/writeups/Shutdown.html) (*voted best write-up by Twitter*)
-* [T0t0r0](https://rtfm.re/writeups/T0t0r0.html)
+* [Shutdown (FR)](https://rtfm.re/writeups/Shutdown.html) (*voted best write-up by Twitter*)
+* [T0t0r0 (FR)](https://rtfm.re/writeups/T0t0r0.html)
 
 ## Efficiency
 
@@ -51,9 +51,9 @@ Tag: **Reverse**, **VM**
 
 ### Write-ups
 
-* [jukebox](https://jukebox.blog/sigsev_quals_efficiency)
-* [MathisHammel](https://blog.h25.io/SIGSEGv2-Efficiency/) (*voted best write-up by Twitter*)
-* [S01den](https://rtfm.re/writeups/S01den.html)
+* [jukebox (FR)](https://jukebox.blog/sigsev_quals_efficiency)
+* [MathisHammel (FR)](https://blog.h25.io/SIGSEGv2-Efficiency/) (*voted best write-up by Twitter*)
+* [S01den (FR)](https://rtfm.re/writeups/S01den.html)
 * [vvapi](https://wapiflapi.github.io/2019/10/10/efficiency-reverse-engineering-with-ghidra.html)
 
 ## Bits Downing
@@ -83,8 +83,8 @@ Tag: **Web**, **XSS**, **DOMPurify**
 
 ### Write-ups
 
-* [Asterix45](https://rtfm.re/writeups/Asterix45_TBE.html) (*voted best write-up by Twitter*)
-* [aucunjutsu](https://rtfm.re/writeups/aucunjutsu.html)
+* [Asterix45 (FR)](https://rtfm.re/writeups/Asterix45_TBE.html) (*voted best write-up by Twitter*)
+* [aucunjutsu (FR)](https://rtfm.re/writeups/aucunjutsu.html)
 * [eqqn](https://eqqn.github.io/2019/10/10/RTFM_quals_XSS.html)
 * [HallElouia](https://rtfm.re/writeups/HallElouia.html)
 
