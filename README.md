@@ -100,5 +100,5 @@ Tag: **Web**, **Race Condition**
 
 ### Write-ups
 
-* [train](https://inshallhack.org/debug_en_production_writeup_sigsegv1_2018/)
+* [train (FR)](https://inshallhack.org/debug_en_production_writeup_sigsegv1_2018/)
 * [Addendum](https://inshallhack.org/production_debugging_sigsegv1_2018/)
