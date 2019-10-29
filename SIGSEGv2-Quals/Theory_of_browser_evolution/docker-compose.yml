@@ -1,0 +1,35 @@
+version: '3'
+services:
+    theoryofbe:
+        build: .
+        image: theoryofbe
+        container_name: theoryofbe
+        restart: always
+        user: theoryofbe
+        depends_on:
+            - theoryofbe-browserless
+        ports:
+            - "8080:8080"
+        networks:
+            - theoryofbe
+    
+    theoryofbe-browserless:
+        image: browserless/chrome:1-chrome-stable
+        restart: always
+        container_name: theoryofbe-browserless
+        environment:
+            DEBUG: "browserless/chrome"
+            MAX_CONCURRENT_SESSIONS: 10
+        ports:
+            - "127.0.0.1:3000:3000"
+        # default user used to launch container
+        user: blessuser
+        networks:
+            - theoryofbe
+
+networks:
+    theoryofbe:
+        driver: bridge
+        driver_opts:
+            com.docker.network.bridge.enable_ip_masquerade: "true"
+            com.docker.network.bridge.name: "webserver_10"
