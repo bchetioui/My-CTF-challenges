@@ -1,0 +1,503 @@
+Lemma my_lemma `{Univalence} {A B} : A <~> B -> IsHSet A -> IsHSet B.
+Lemma my_lemma {A B} : A <~> B -> IsHSet A -> IsHSet B.
+Lemma my_lemma (A B : Type) : IsHSet A -> IsHSet B -> IsHSet (A+B).
+Lemma my_lemma `{Funext} (A : Type) : IsHProp A <-> Contr (A -> A).
+Lemma my_lemma `{Funext} (A : Type) : IsHProp A -> IsHProp (A + ~A).
+Lemma my_lemma `{Univalence} : LEM -> hProp <~> Bool.
+Lemma my_lemma `{Univalence} : ~ (forall A, Trunc (-1) A -> A).
+Lemma my_lemma A : merely A <~> ~~A.
+Lemma my_lemma : forall n, Book_5_2_i n = Book_5_2_ii n.
+Lemma my_lemma {ua : Univalence} `{fs : Funext} : Book_6_9 Bool = negb.
+Lemma my_lemma `{Funext} (f: AllExistsOther Bool) : centerAllExOthBool = f.
+Lemma my_lemma `{Funext} : solution_6_9 Bool <> idmap.
+Lemma my_lemma (H : forall A, merely A -> A) A : IsHSet A.
+Lemma my_lemma (A : Type) (x y : A) (p : x == y) : transport (P := fun z => z == y) p p == idpath y.
+Lemma my_lemma : Streicher_K_statement -> is_contr C.
+Lemma my_lemma : P base.
+Lemma my_lemma : transport (P := P) loop cc_base == cc_base.
+Lemma my_lemma : forall x : C1, P x.
+Lemma my_lemma (A B : Type) : A * is_inhab B -> is_inhab (A * B).
+Lemma my_lemma {A} (x y z : A) (p : x = y) : (y = z) <~> (x = z).
+Lemma my_lemma {A} (x y z : A) (p : y = z) : (x = y) <~> (x = z).
+Lemma my_lemma A B (u : A * B) : (fst u, snd u) = u.
+Lemma my_lemma (A B : Type) : eta_statement A B -> (A -> B) <~> (A -> B).
+Lemma my_lemma : is_contr (total Q).
+Lemma my_lemma : is_contr (total R).
+Lemma my_lemma {A} {x y : A} (p : x = y) : idpath x @ p = p.
+Lemma my_lemma {A} {x y : A} (p : x = y) : (p @ idpath y) = p.
+Lemma my_lemma {A} {x y : A} (p : x = y) : (p @ !p) = idpath x.
+Lemma my_lemma {A} {x y : A} (p : x = y) : (!p @ p) = idpath y.
+Lemma my_lemma {A} {x y z : A} (p : x = y) (q : y = z) : !(p @ q) = !q @ !p.
+Lemma my_lemma {A} {x : A} : !(idpath x) = idpath x.
+Lemma my_lemma {A} {x y : A} (p : x = y) : !(! p) = p.
+Lemma my_lemma {A B} {x y : A} (f : A -> B) : (x = y) -> (f x = f y).
+Lemma my_lemma {A B} {x : A} (f : A -> B) : map f (idpath x) = idpath (f x).
+Lemma my_lemma {A} {x y : A} (p : x = y) : map (idmap A) p = p.
+Lemma my_lemma {A} {x y z : A} (r : y = z) (p q : x = y)  : (p @ r = q @ r) -> (p = q).
+Lemma my_lemma {A} {x y z : A} (p : x = y) (q r : y = z) : (p @ q = p @ r) -> (q = r).
+Lemma my_lemma A B C (g : A <~> B) : (B -> C) <~> (A -> C).
+Lemma my_lemma A B C (g : B <~> C) : (A -> B) <~> (A -> C).
+Lemma my_lemma {A B} (f : A -> B) : is_hiso' f <~> is_hiso f.
+Lemma my_lemma : adjunction_naturalityT.
+Lemma my_lemma : adjunction_naturalityT'.
+Lemma my_lemma Y : mor_of Y Y 1 = 1.
+Lemma my_lemma : fst o (a * b) = a.
+Lemma my_lemma : snd o (a * b) = b.
+Lemma my_lemma (F : Functor C D) : 1 o F = F.
+Lemma my_lemma (F : Functor C D) : F o 1 = F.
+Lemma my_lemma `{H : Funext_type} : Funext_type.
+Lemma my_lemma {A B C f g} : Sect (@pushout_sym_map A C B g f) (@pushout_sym_map A B C f g).
+Lemma my_lemma : forall q x, in_class q x -> q = class_of R x.
+Lemma my_lemma : forall {x y : quotient R} (p q : x=y), p=q.
+Lemma my_lemma : forall x y, (in_class (class_of R x) y : Type) = R x y.
+Lemma my_lemma : forall q x, in_class q x -> q = class_of R x.
+Lemma my_lemma : forall b, IsHProp (exists c : C, forall a, g a = b -> f a = c).
+Lemma my_lemma : f == compose surjective_factor g.
+Lemma my_lemma {X Y} f : @isepi X Y f <~> @isepi' X Y f.
+Lemma my_lemma `{Funext} {A B : hSet} (f : A -> B) : isepi' f -> Contr (setcone f).
+Lemma my_lemma {X Y} (f:X->Y): IsSurjection f -> isepi f.
+Lemma my_lemma {X Y} (f:X->Y): isepi f -> issurj f.
+Lemma my_lemma : IsSurjection f.
+Lemma my_lemma : psphere 1 <~>* (Build_pType S1 Circle.base).
+Lemma my_lemma : forall u v : V, (u = v) <~> (u ~~ v).
+Lemma my_lemma : transport (fun A : Type => A -> V) path^ mu = mu'.
+Lemma my_lemma : (Au; (mu; (h, mono, p))) = (Au'; (mu'; (h', mono', p'))) :> {A : Type & {m : A -> V & IsHSet A * IsEmbedding m * (u = set m)}}.
+Lemma my_lemma : forall {x y : V}, (x ⊆ y * y ⊆ x) <-> x = y.
+Lemma my_lemma {A B} {f : A -> V} {g : B -> V} : set f = set g -> equal_img f g.
+Lemma my_lemma {u v u' v' : V@{U' U}} : (u = u') * (v = v') -> V_pair u v = V_pair u' v'.
+Lemma my_lemma {u v w : V} : V_pair u v = V_singleton w <-> (u = w) * (v = w).
+Lemma my_lemma {a b c d : V} : [a, b] = [c, d] <-> (a = c) * (b = d).
+Lemma my_lemma : forall x, ~ (x ∈ V_empty).
+Lemma my_lemma : forall u v, hexists (fun w => forall x, x ∈ w <-> hor (x = u) (x = v)).
+Lemma my_lemma : (V_empty ∈ V_omega) * (forall x, x ∈ V_omega -> V_succ x ∈ V_omega).
+Lemma my_lemma : forall v, hexists (fun w => forall x, x ∈ w <-> hexists (fun u => x ∈ u * u ∈ v)).
+Lemma my_lemma : forall u v, hexists (fun w => forall x, x ∈ w <-> V_is_func u v x).
+Lemma my_lemma {B A} {f g : B -> A} : Sect (Coeq_sym_map g f) (Coeq_sym_map f g).
+Lemma my_lemma {B A} {f g : B -> A} : @Coeq B A f g <~> Coeq g f.
+Lemma my_lemma : forall x y : nat, x + (y * x) = x * (y + 1).
+Lemma my_lemma (σ : Signature) : SigAlgebra σ <~> Algebra σ.
+Lemma my_lemma `{UnaryIdempotent A f} x : f (f x) = f x.
+Lemma my_lemma : forall a b : Bool, andb a b = true -> a = true /\ b = true.
+Lemma my_lemma : forall P, P =? 0 = true -> forall vs, eval vs P = 0.
+Lemma my_lemma vs : forall c P, eval vs (addC c P) = (phi c) + eval vs P.
+Lemma my_lemma vs : forall c P, eval vs (mulC c P) = (phi c) * eval vs P.
+Lemma my_lemma vs : forall P Q, eval vs (add P Q) = eval vs P + eval vs Q.
+Lemma my_lemma vs : forall (v:V) (P:Pol), eval vs (mulX v P) = eval vs P * vs v.
+Lemma my_lemma vs : forall P Q, eval vs (mul P Q) = eval vs P * eval vs Q.
+Lemma my_lemma `{Funext} (σ : Signature) : PreCategory.
+Lemma my_lemma : A = B.
+Lemma my_lemma : forall P : Operations -> Type, P A -> P B.
+Lemma my_lemma : A = B.
+Lemma my_lemma : forall P : Operations -> Type, P A -> P B.
+Lemma my_lemma x : x < 0 -> /x < 0.
+Lemma my_lemma x : x ≤ 0 -> /x ≤ 0.
+Lemma my_lemma x y : 0 < y -> y ≤ x  -> /x ≤ /y.
+Lemma my_lemma x y : 0 < y -> /y ≤ x  -> /x ≤ y.
+Lemma my_lemma x y : 0 < y -> y ≤ /x  -> x ≤ /y.
+Lemma my_lemma x y : 0 < y -> y < x  -> /x < /y.
+Lemma my_lemma x y : 0 < y -> /y < x  -> /x < y.
+Lemma my_lemma x y : 0 < y -> y < /x  -> x < /y.
+Lemma my_lemma `{Le A} `{!TotalRelation (≤)} x y : ~y ≤ x -> x ≤ y.
+Lemma my_lemma x y : x = y -> x ≤ y.
+Lemma my_lemma x y : x = y -> y ≤ x.
+Lemma my_lemma x y : ~x ≤ y -> x <> y.
+Lemma my_lemma x y : x = y <-> x ≤ y /\ y ≤ x.
+Lemma my_lemma x y : x < y -> ~y < x.
+Lemma my_lemma x y : ~(x < y < x).
+Lemma my_lemma x y : x < y -> x <> y.
+Lemma my_lemma x y : x < y -> y <> x.
+Lemma my_lemma x y : x = y -> ~x < y.
+Lemma my_lemma x y : x ≶ y -> x < y |_| y < x.
+Lemma my_lemma x y : x < y -> x ≶ y.
+Lemma my_lemma x y : x < y -> y ≶ x.
+Lemma my_lemma x y : ~x < y -> x ≶ y -> y < x.
+Lemma my_lemma `{!TrivialApart A} x y : x <> y -> x < y |_| y < x.
+Lemma my_lemma x y : PropHolds (x < y) -> PropHolds (x ≤ y).
+Lemma my_lemma x y : ~x ≤ y -> ~x < y.
+Lemma my_lemma x y : x < y -> x ≶ y.
+Lemma my_lemma x y : x < y -> y ≶ x.
+Lemma my_lemma x y : y ≤ x -> ~x < y.
+Lemma my_lemma x y : y < x -> ~x ≤ y.
+Lemma my_lemma x y z : x < y -> y ≤ z -> x < z.
+Lemma my_lemma x y z : x ≤ y -> y < z -> x < z.
+Lemma my_lemma `{!TrivialApart A} x y : x < y <-> x ≤ y /\ x <> y.
+Lemma my_lemma x y : ~y < x -> x ≤ y.
+Lemma my_lemma : FullPartialOrder Ale Alt.
+Lemma my_lemma `{!TrivialApart A} `{DecidablePaths A} x y : x ≤ y |_| y < x.
+Lemma my_lemma `{Lt A} : forall x y z, x < y -> y = z -> x < z.
+Lemma my_lemma x y z : z ≤ x ⊔ y ⊔ z.
+Lemma my_lemma x y z : y ≤ x ⊔ y ⊔ z.
+Lemma my_lemma x y z : x ≤ x ⊔ y ⊔ z.
+Lemma my_lemma x y z : x ≤ x ⊔ (y ⊔ z).
+Lemma my_lemma x y z : y ≤ x ⊔ (y ⊔ z).
+Lemma my_lemma x y z : z ≤ x ⊔ (y ⊔ z).
+Lemma my_lemma x y z : z ≤ x -> z ≤ x ⊔ y.
+Lemma my_lemma x y z : z ≤ y -> z ≤ x ⊔ y.
+Lemma my_lemma x y : y ≤ x -> x ⊔ y = x.
+Lemma my_lemma x y : x ≤ y -> x ⊔ y = y.
+Lemma my_lemma x y : x ≤ y <-> x ⊔ y = y.
+Lemma my_lemma x₁ x₂ y₁ y₂ : x₁ ≤ x₂ -> y₁ ≤ y₂ -> x₁ ⊔ y₁ ≤ x₂ ⊔ y₂.
+Lemma my_lemma x y z : x ≤ z -> y ≤ z -> x ⊔ y ≤ z.
+Lemma my_lemma `{!TotalRelation le} x y : join x y = x |_| join x y = y.
+Lemma my_lemma x y : join x y = max x y.
+Lemma my_lemma x : ⊥ ≤ x.
+Lemma my_lemma x : x ≤ ⊥ -> x = ⊥.
+Lemma my_lemma x y z : x ⊓ y ⊓ z ≤ z.
+Lemma my_lemma x y z : x ⊓ y ⊓ z ≤ y.
+Lemma my_lemma x y z : x ⊓ y ⊓ z ≤ x.
+Lemma my_lemma x y z : x ⊓ (y ⊓ z) ≤ x.
+Lemma my_lemma x y z : x ⊓ (y ⊓ z) ≤ y.
+Lemma my_lemma x y z : x ⊓ (y ⊓ z) ≤ z.
+Lemma my_lemma x y z : x ≤ z -> x ⊓ y ≤ z.
+Lemma my_lemma x y z : y ≤ z -> x ⊓ y ≤ z.
+Lemma my_lemma x y : x ≤ y -> x ⊓ y = x.
+Lemma my_lemma x y : y ≤ x -> x ⊓ y = y.
+Lemma my_lemma x y : x ≤ y <-> x ⊓ y = x.
+Lemma my_lemma x₁ x₂ y₁ y₂ : x₁ ≤ x₂ -> y₁ ≤ y₂ -> x₁ ⊓ y₁ ≤ x₂ ⊓ y₂.
+Lemma my_lemma x y z : z ≤ x -> z ≤ y -> z ≤ x ⊓ y.
+Lemma my_lemma x y : meet x y = x |_| meet x y = y.
+Lemma my_lemma x y : meet x y = min x y.
+Lemma my_lemma x y z : (x ⊓ y) ⊔ (x ⊓ z) ≤ x ⊓ (y ⊔ z).
+Lemma my_lemma x y z : x ⊔ (y ⊓ z) ≤ (x ⊔ y) ⊓ (x ⊔ z).
+Lemma my_lemma : JoinSemiLatticeOrder (≤).
+Lemma my_lemma : MeetSemiLatticeOrder (≤).
+Lemma my_lemma OrderPreserving f.
+Lemma my_lemma `{!IsInjective f}: OrderReflecting f.
+Lemma my_lemma OrderPreserving f.
+Lemma my_lemma `{!IsInjective f}: OrderReflecting f.
+Lemma my_lemma IsJoinPreserving f.
+Lemma my_lemma IsSemiGroupPreserving f.
+Lemma my_lemma x : 0 ≤ x -> exists z, x = naturals_to_semiring N R z.
+Lemma my_lemma x y : x ≤ y <-> exists z, y = x + naturals_to_semiring N R z.
+Lemma my_lemma x y : x < y <-> exists z, y = x + 1 + naturals_to_semiring N R z.
+Lemma my_lemma x y : x < y <-> x + 1 ≤ y.
+Lemma my_lemma x y : x < y <-> 1 + x ≤ y.
+Lemma my_lemma x : 0 < x <-> 1 ≤ x.
+Lemma my_lemma x y : x ≤ y <-> x < y + 1.
+Lemma my_lemma x y : x ≤ y <-> x < 1 + y.
+Lemma my_lemma x z : 0 ≤ z <-> x ≤ x + z.
+Lemma my_lemma x z : 0 ≤ z <-> x ≤ z + x.
+Lemma my_lemma x₁ y₁ x₂ y₂ : x₁ ≤ y₁ -> x₂ ≤ y₂ -> x₁ + x₂ ≤ y₁ + y₂.
+Lemma my_lemma x y z : 0 ≤ z -> x ≤ y -> x ≤ y + z.
+Lemma my_lemma x y z : 0 ≤ z -> x ≤ y -> x ≤ z + y.
+Lemma my_lemma x y : x ≤ 0 -> y ≤ 0 -> x + y ≤ 0.
+Lemma my_lemma {x y} : x ≤ y -> exists z, 0 ≤ z /\ y = x + z.
+Lemma my_lemma x y z : 0 ≤ z -> y = x + z -> x ≤ y.
+Lemma my_lemma x y z : 1 ≤ z -> 0 ≤ y -> x ≤ y -> x ≤ y * z.
+Lemma my_lemma x y z : 1 ≤ z -> 0 ≤ y -> x ≤ y -> x ≤ z * y.
+Lemma my_lemma x y z : z ≤ 0 -> x ≤ y -> z * y ≤ z * x.
+Lemma my_lemma x y z : z ≤ 0 -> x ≤ y -> y * z ≤ x * z.
+Lemma my_lemma x y : x ≤ 0 -> y ≤ 0 -> 0 ≤ x * y.
+Lemma my_lemma x y : x ≤ 0 -> 0 ≤ y -> x * y ≤ 0.
+Lemma my_lemma x y : 0 ≤ x -> y ≤ 0 -> x * y ≤ 0.
+Lemma my_lemma x z : 0 < z <-> x < x + z.
+Lemma my_lemma x z : 0 < z -> x < z + x.
+Lemma my_lemma x₁ y₁ x₂ y₂ : x₁ < y₁ -> x₂ < y₂ -> x₁ + x₂ < y₁ + y₂.
+Lemma my_lemma x y z : 0 < z -> x < y -> x < y + z.
+Lemma my_lemma x y z : 0 < z -> x < y -> x < z + y.
+Lemma my_lemma x y : x < 0 -> y < 0 -> x + y < 0.
+Lemma my_lemma x y z : 0 < z -> y = x + z -> x < y.
+Lemma my_lemma {x y} : x < y -> exists z, 0 < z /\ y = x + z.
+Lemma my_lemma x y z : 1 < z -> 0 < y -> x < y -> x < y * z.
+Lemma my_lemma x y z : 1 < z -> 0 < y -> x < y -> x < z * y.
+Lemma my_lemma x y z : z < 0 -> x < y -> z * y < z * x.
+Lemma my_lemma x y z : z < 0 -> x < y -> y * z < x * z.
+Lemma my_lemma x y : x < 0 -> y < 0 -> 0 < x * y.
+Lemma my_lemma x y : x < 0 -> 0 < y -> x * y < 0.
+Lemma my_lemma x y : 0 < x -> y < 0 -> x * y < 0.
+Lemma my_lemma x y : x * y < 0 -> (x < 0 /\ 0 < y) |_| (0 < x /\ y < 0).
+Lemma my_lemma x y : 0 < x * y -> (0 < x /\ 0 < y) |_| (x < 0 /\ y < 0).
+Lemma my_lemma x : x ≶ 0 -> 0 < x * x.
+Lemma my_lemma x y : 0 < x * y -> 0 < y -> 0 < x.
+Lemma my_lemma x y : 0 < x * y -> 0 < x -> 0 < y.
+Lemma my_lemma : 1 < 2.
+Lemma my_lemma : 1 < 3.
+Lemma my_lemma : 1 < 4.
+Lemma my_lemma : 2 < 3.
+Lemma my_lemma : 2 < 4.
+Lemma my_lemma : 3 < 4.
+Lemma my_lemma x₁ y₁ x₂ y₂ : x₁ < y₁ -> x₂ ≤ y₂ -> x₁ + x₂ < y₁ + y₂.
+Lemma my_lemma x₁ y₁ x₂ y₂ : x₁ ≤ y₁ -> x₂ < y₂ -> x₁ + x₂ < y₁ + y₂.
+Lemma my_lemma x y z : 0 ≤ z -> x < y -> x < y + z.
+Lemma my_lemma x y z : 0 ≤ z -> x < y -> x < z + y.
+Lemma my_lemma x y z : 0 < z -> x ≤ y -> x < y + z.
+Lemma my_lemma x y z : 0 < z -> x ≤ y -> x < z + y.
+Lemma my_lemma x : 0 ≤ x * x.
+Lemma my_lemma x y : 0 ≤ x * y -> 0 < y -> 0 ≤ x.
+Lemma my_lemma x y : 0 ≤ x * y -> 0 < x -> 0 ≤ y.
+Lemma my_lemma : 1 ≤ 2.
+Lemma my_lemma : 1 ≤ 3.
+Lemma my_lemma : 1 ≤ 4.
+Lemma my_lemma : 2 ≤ 3.
+Lemma my_lemma : 2 ≤ 4.
+Lemma my_lemma : 3 ≤ 4.
+Lemma my_lemma x y : 1 ≤ x -> 1 ≤ y -> 1 ≤ x * y.
+Lemma my_lemma x y : 1 < x -> 1 ≤ y -> 1 < x * y.
+Lemma my_lemma x y : 1 ≤ x -> 1 < y -> 1 < x * y.
+Lemma my_lemma : ~1 ≤ 0.
+Lemma my_lemma : ~2 ≤ 0.
+Lemma my_lemma : forall n, 0 <= Peano.nat_iter n (plus 1) 0.
+Lemma my_lemma : forall n, 0 < Peano.nat_iter (S n) (plus 1) 0.
+Lemma my_lemma : (forall x, 0 ≤ x -> 0 ≤ f x) -> OrderPreserving f.
+Lemma my_lemma `{!OrderPreserving f} x : x ≤ 0 -> f x ≤ 0.
+Lemma my_lemma `{!OrderPreserving f} x : 1 ≤ x -> 1 ≤ f x.
+Lemma my_lemma `{!OrderPreserving f} x : x ≤ 1 -> f x ≤ 1.
+Lemma my_lemma {x y: N}: x ≤ y <-> exists z, y = x + z.
+Lemma my_lemma x : ~x < 0.
+Lemma my_lemma x : x = 0 |_| 0 < x.
+Lemma my_lemma x : x = 0 |_| 1 ≤ x.
+Lemma my_lemma x : x <> 0 <-> 0 < x.
+Lemma my_lemma x : x <> 0 <-> 1 ≤ x.
+Lemma my_lemma n : -f n ≤ 0.
+Lemma my_lemma n : -f n ≤ f n.
+Lemma my_lemma SemiRingOrder (≤).
+Lemma my_lemma StrictSemiRingOrder (<).
+Lemma my_lemma PseudoSemiRingOrder (<).
+Lemma my_lemma FullPseudoSemiRingOrder (≤) (<).
+Lemma my_lemma x y : -y ≤ -x <-> x ≤ y.
+Lemma my_lemma x : 0 ≤ x <-> -x ≤ 0.
+Lemma my_lemma x : x ≤ 0 <-> 0 ≤ -x.
+Lemma my_lemma (x y z : R) : z ≤ y - x <-> z + x ≤ y.
+Lemma my_lemma (x y z : R) : y - x ≤ z <-> y ≤ z + x.
+Lemma my_lemma (x y : R) : 0 ≤ y - x <-> x ≤ y.
+Lemma my_lemma (x y : R) : y - x ≤ 0 <-> y ≤ x.
+Lemma my_lemma (x y z : R) : 0 ≤ z -> x ≤ y -> x - z ≤ y.
+Lemma my_lemma (x y z : R) : 0 ≤ z -> x ≤ y - z -> x ≤ y.
+Lemma my_lemma (x : R) : 0 ≤ x -> -x ≤ x.
+Lemma my_lemma x y : -y < -x <-> x < y.
+Lemma my_lemma x : 0 < x <-> -x < 0.
+Lemma my_lemma x : x < 0 <-> 0 < -x.
+Lemma my_lemma (x y z : R) : z < y - x <-> z + x < y.
+Lemma my_lemma (x y z : R) : y - x < z <-> y < z + x.
+Lemma my_lemma (x y : R) : 0 < y - x <-> x < y.
+Lemma my_lemma (x y : R) : y - x < 0 <-> y < x.
+Lemma my_lemma (x y z : R) : 0 < z -> x < y -> x - z < y.
+Lemma my_lemma (x : R) : 0 < x -> -x < x.
+Lemma my_lemma : (forall x, 0 ≤ f x -> 0 ≤ x) -> OrderReflecting f.
+Lemma my_lemma `{!OrderPreserving f} x : - 1 ≤ x -> - 1 ≤ f x.
+Lemma my_lemma `{!OrderPreserving f} x : x ≤ - 1 -> f x ≤ - 1.
+Lemma my_lemma / 1 = 1.
+Lemma my_lemma (x y: F): / (x * y) = / x * / y.
+Lemma my_lemma x : / x = 0 <-> x = 0.
+Lemma my_lemma x : / x <> 0 <-> x <> 0.
+Lemma my_lemma (x y : F) : x / y = 1 -> x = y.
+Lemma my_lemma x y: x / y = / (/ x * y).
+Lemma my_lemma x y: / x * y = / (x / y).
+Lemma my_lemma x : -(/ x) = / (-x).
+Lemma my_lemma (x : F) Px : / x = // (x;Px).
+Lemma my_lemma x : int_abs Z N x = 0 <-> x = 0.
+Lemma my_lemma x : int_abs Z N x <> 0 <-> x <> 0.
+Lemma my_lemma : int_abs Z N 0 = 0.
+Lemma my_lemma : int_abs Z N 1 = 1.
+Lemma my_lemma IsSemiLattice B.
+Lemma my_lemma IsBoundedSemiLattice B.
+Lemma my_lemma (x : F) Px : x // (x;Px) = 1.
+Lemma my_lemma x y Px Py : x = y -> // (x;Px) = // (y;Py).
+Lemma my_lemma x Px1 Px2 : // (x;Px1) = // (x;Px2).
+Lemma my_lemma {x y} : x ≶ 0 -> x = y -> y ≶ 0.
+Lemma my_lemma x y : x * y ≶ 0 -> x ≶ 0.
+Lemma my_lemma x y : x * y ≶ 0 -> y ≶ 0.
+Lemma my_lemma x y : x = 0 -> x // y = 0.
+Lemma my_lemma x y : x = y.1 -> x // y = 1.
+Lemma my_lemma (a c: F) b d : a * d.1 = c * b.1 <-> a // b = c // d.
+Lemma my_lemma : (forall x, x ≶ 0 -> f x ≶ 0) -> IsStrongInjective f.
+Lemma my_lemma x Px Pfx : f (// (x;Px)) = // (f x;Pfx).
+Lemma my_lemma x y : PropHolds (x ≶ y) -> PropHolds (x <> y).
+Lemma my_lemma : - mon_unit = mon_unit.
+Lemma my_lemma x y : - (x & y) = -y & -x.
+Lemma my_lemma `{IsAbGroup G} x y : -(x & y) = -x & -y.
+Lemma my_lemma x : f (-x) = -f x.
+Lemma my_lemma IsSemiGroup B.
+Lemma my_lemma : Commutative (A:=B) sg_op.
+Lemma my_lemma : IsCommutativeSemiGroup B.
+Lemma my_lemma : IsMonoid B.
+Lemma my_lemma : IsCommutativeMonoid B.
+Lemma my_lemma : IsGroup B.
+Lemma my_lemma : IsAbGroup B.
+Lemma my_lemma : ~ LT = EQ.
+Lemma my_lemma : ~ LT = GT.
+Lemma my_lemma : ~ EQ = LT.
+Lemma my_lemma : ~ EQ = GT.
+Lemma my_lemma : ~ GT = EQ.
+Lemma my_lemma `{Compare A} : forall a b : A, a =? b = true -> a ?= b = EQ.
+Lemma my_lemma `{Funext} (p : P = Q) : A&P = A&Q.
+Lemma my_lemma : forall a b : Qpos, 0 < 'a + 'b.
+Lemma my_lemma : forall a b : Q+, @paths Q (' a) (' b) -> a = b.
+Lemma my_lemma : forall e : Q+, e / e = 1.
+Lemma my_lemma : forall e : Q+, @paths Q (' e / ' e) 1.
+Lemma my_lemma : forall e : Q+, e * 1 = e.
+Lemma my_lemma : forall e : Q+, e = e / 2 + e / 2.
+Lemma my_lemma : forall e : Q+, e = e / 3 + e / 3 + e / 3.
+Lemma my_lemma : forall a b : Q+, a * b / a = b.
+Lemma my_lemma : / 1 = 1 :> Q+.
+Lemma my_lemma : @LeftDistribute Q+ mult plus.
+Lemma my_lemma : forall q r E, r = q + ' (Qpos_diff q r E).
+Lemma my_lemma : forall a b c : Q, meet (a + b) (a + c) = a + meet b c.
+Lemma my_lemma : forall q : Q, 0 <= abs q.
+Lemma my_lemma : forall q : Q, abs q <= 0 -> q = 0.
+Lemma my_lemma : forall q : Q, q = 0 |_| 0 < abs q.
+Lemma my_lemma : forall q : Q, 0 <= q -> abs q = q.
+Lemma my_lemma : forall q : Q, q <= 0 -> abs q = - q.
+Lemma my_lemma : forall x : Q, x <= abs x.
+Lemma my_lemma : forall x : Q, abs (- x) = abs x.
+Lemma my_lemma : forall x : Q, - x <= abs x.
+Lemma my_lemma : forall x y : Q, abs x <= y <-> - y <= x /\ x <= y.
+Lemma my_lemma : forall q : Q, abs q = join (- q) q.
+Lemma my_lemma : forall q r : Q, q < r -> q < (q + r) / 2 < r.
+Lemma my_lemma : 2/4 =  1/2 :> Q+.
+Lemma my_lemma : forall q r : Q, abs (q + r) <= abs q + abs r.
+Lemma my_lemma : forall x y : Q, abs x - abs y <= abs (x - y).
+Lemma my_lemma : forall x y : Q, abs (abs x - abs y) <= abs (x - y).
+Lemma my_lemma : forall q r : Q, q < r -> exists s, q < s < r.
+Lemma my_lemma : forall a b : Q, abs (a - b) = abs (b - a).
+Lemma my_lemma : forall a b : Q, abs (a * b) = abs a * abs b.
+Lemma my_lemma : forall a : Q+, - ' a <= ' a.
+Lemma my_lemma `{!Lipschitz f 1} : NonExpanding f.
+Lemma my_lemma mu `{!Uniform@{UA UB} f mu} : Continuous f.
+Lemma my_lemma : forall e (q r : Q), close e q r <-> abs (q - r) < ' e.
+Lemma my_lemma : forall e (x y : Q), close e x y <-> close e (- x) (- y).
+Lemma my_lemma : forall x l1 l2, IsLimit x l1 -> IsLimit x l2 -> l1 = l2.
+Lemma my_lemma `{Funext} (p : Φ = Ψ) : A/Φ = A/Ψ.
+Lemma my_lemma {σ} {A B : Algebra σ} (p : A = B) : A ≅ B.
+Lemma my_lemma : Sect id_isomorphic (@isomorphic_id σ A B).
+Lemma my_lemma : Sect (@isomorphic_id σ A B) id_isomorphic.
+Lemma my_lemma `{Integers Z} (f : Z -> Z) `{!IsSemiRingPreserving f} x : f x = x.
+Lemma my_lemma x : (integers_to_ring Z R ∘ f^-1) x = h x.
+Lemma my_lemma Integers Z2 (U:=retract_is_int_to_ring).
+Lemma my_lemma x : (naturals_to_semiring N R ∘ f^-1) x = h x.
+Lemma my_lemma : Naturals SR (U:=retract_is_nat_to_sr).
+Lemma my_lemma : forall x : N, x = 0 |_| exists y : N, (x = 1 + y)%mc.
+Lemma my_lemma : forall (x y : N), x + y = 0 -> x = 0 /\ y = 0.
+Lemma my_lemma : forall (x y : N), x + y = 1 -> (x = 1 /\ y = 0) |_| (x = 0 /\ y = 1).
+Lemma my_lemma x : 1 + x <> 0.
+Lemma my_lemma : LeftDistribute (.*.) (+).
+Lemma my_lemma f 0 = 0.
+Lemma my_lemma f 1 = 1.
+Lemma my_lemma forall x y, f (x * y) = f x * f y.
+Lemma my_lemma forall x y, f (x + y) = f x + f y.
+Lemma my_lemma f 2 = 2.
+Lemma my_lemma f 3 = 3.
+Lemma my_lemma f 4 = 4.
+Lemma my_lemma x : x <> 1 -> f x <> 1.
+Lemma my_lemma : forall x, x + -x = 0.
+Lemma my_lemma : forall x, -x + x = 0.
+Lemma my_lemma : forall x y, x - y = -(y - x).
+Lemma my_lemma x y : -x + y = -(x - y).
+Lemma my_lemma : forall x y, -(x + y) = -x + -y.
+Lemma my_lemma x : -x = - 1 * x.
+Lemma my_lemma x y : -(x * y) = -x * y.
+Lemma my_lemma x y : -(x * y) = x * -y.
+Lemma my_lemma x y : -x * -y = x * y.
+Lemma my_lemma -0 = 0.
+Lemma my_lemma x y : x - y = 0 <-> x = y.
+Lemma my_lemma x y : -x = y <-> x = -y.
+Lemma my_lemma x : -x = 0 <-> x = 0.
+Lemma my_lemma x : -x <> 0 <-> x <> 0.
+Lemma my_lemma x y : -x * y = 0 <-> x * y = 0.
+Lemma my_lemma x y : x * -y = 0 <-> x * y = 0.
+Lemma my_lemma x y : x = y + x - y.
+Lemma my_lemma x y : x = y + (x - y).
+Lemma my_lemma x y : f (x - y) = f x - f y.
+Lemma my_lemma : (forall x, f x = 0 -> x = 0) -> IsInjective f.
+Lemma my_lemma IsRing B.
+Lemma my_lemma (l: ne_list): l = from_list (head l) (tail l).
+Lemma my_lemma : forall x:nat, x + 0 =N= x.
+Lemma my_lemma : forall a b, a + S b =N= S (a + b).
+Lemma my_lemma a b : S a + b =N= S (a + b).
+Lemma my_lemma a : 0 + a =N= a.
+Lemma my_lemma : forall a : nat, a * 0 =N= 0.
+Lemma my_lemma : forall a b : nat, a * S b =N= a + a * b.
+Lemma my_lemma : O =N= 0.
+Lemma my_lemma x : S x =N= x + 1.
+Lemma my_lemma x : S x =N= 1 + x.
+Lemma my_lemma : forall a b : nat, a + b =N= 0 -> a =N= 0 /\ b =N= 0.
+Lemma my_lemma : forall a b : nat, a * b =N= 0 -> a =N= 0 |_| b =N= 0.
+Lemma my_lemma : forall n k, n <= k + n.
+Lemma my_lemma : forall a, 0 <= a.
+Lemma my_lemma : forall a b : nat, iff@{N N N} (a <= b) (S a <= S b).
+Lemma my_lemma : forall a, 0 < S a.
+Lemma my_lemma : forall a b, a <= S b -> a <= b |_| a = S b.
+Lemma my_lemma : forall a b : nat, a <= b |_| b < a.
+Lemma my_lemma : forall a, ~ a < 0.
+Lemma my_lemma : forall a b, a < b -> a <= b.
+Lemma my_lemma : forall a b, ~ a < b -> b <= a.
+Lemma my_lemma : forall a b : nat, a < b -> ~ b <= a.
+Lemma my_lemma : forall a, 0 < S a.
+Lemma my_lemma : forall a, ~ a =N= 0 -> 0 < a.
+Lemma my_lemma : forall a b c : nat, a <= b -> b < c -> a < c.
+Lemma my_lemma : forall a b : nat, a < b -> forall c, a < c |_| c < b.
+Lemma my_lemma : FullPseudoSemiRingOrder nat_le nat_lt.
+Lemma my_lemma : Naturals@{N N N N N N N i} nat.
+Lemma my_lemma : forall a b, cut_minus (a + b) b =N= a.
+Lemma my_lemma : forall n m : nat, n <= m -> m =N= (n + (cut_minus m  n)).
+Lemma my_lemma : forall a b, a <= b -> cut_minus a b =N= 0.
+Lemma my_lemma `(f : A -> A) (Hf : forall x, f x = x) (l : list A) : map f l = l.
+Lemma my_lemma : IsHSet Frac.
+Lemma my_lemma : forall q r, equiv (pl q r) (pl r q).
+Lemma my_lemma : forall q r t, equiv (pl q (pl r t)) (pl (pl q r) t).
+Lemma my_lemma : forall q r, equiv q r -> equiv (- q) (- r).
+Lemma my_lemma x : ~ equiv x 0 <-> num x <> 0.
+Lemma my_lemma x : equiv (0 + x) x.
+Lemma my_lemma x : equiv (x + 0) x.
+Lemma my_lemma x : equiv (- x + x) 0.
+Lemma my_lemma q r t : equiv (ml q (ml r t)) (ml (ml q r) t).
+Lemma my_lemma : forall q r, equiv q r -> equiv (/ q) (/ r).
+Lemma my_lemma : forall q r, equiv q r -> equiv (lift q) (lift r).
+Lemma my_lemma : forall q r, ' q = ' r -> equiv q r.
+Lemma my_lemma : forall q r, ~ equiv q r -> ~ ' q = ' r.
+Lemma my_lemma : forall q r, ~ ' q = ' r -> ~ equiv q r.
+Lemma my_lemma : / 0 = 0.
+Lemma my_lemma : forall q, ~ ' q = 0 -> ~ num q = 0.
+Lemma my_lemma : forall q r, Decidable (class q = class r).
+Lemma my_lemma : forall q1 q2, equiv q1 q2 -> equiv (opp q1) (opp q2).
+Lemma my_lemma : CoTransitive Tapart.
+Lemma my_lemma : IsRing Z.
+Lemma my_lemma : IsSemiRingPreserving (cast N Z).
+Lemma my_lemma : forall n m : N, ' (PairT.C n m) = ' n + - ' m.
+Lemma my_lemma : PartialOrder Zle.
+Lemma my_lemma : OrderEmbedding (cast N Z).
+Lemma my_lemma : forall z : Z, OrderPreserving ((+) z).
+Lemma my_lemma : forall a b, ' a < ' b = PairT.Tlt a b.
+Lemma my_lemma : StrictOrder Zlt.
+Lemma my_lemma : forall a b, apart (' a) (' b) = PairT.Tapart a b.
+Lemma my_lemma : IsApart Z.
+Lemma my_lemma : FullPseudoOrder Zle Zlt.
+Lemma my_lemma : forall z : Z, StrongExtensionality (z *.).
+Lemma my_lemma `{IsRing B} : IsSemiRingPreserving (integers_to_ring Z B).
+Lemma my_lemma : IntAbs Z N.
+Lemma my_lemma : ZeroProduct Z.
+Lemma my_lemma (n : Graph) : IsHProp (in_N@{p} n).
+Lemma my_lemma (A B : Graph) (Arec : in_N@{u} A) : IsHProp (A = B).
+Lemma my_lemma n m : IsHProp (n < m).
+Lemma my_lemma : Contr (partial_Nrec zero).
+Lemma my_lemma (hprop : Type) `{IsHProp hprop} :  hprop -> hprop <~> Unit.
+Lemma my_lemma (hprop : Type) `{IsHProp hprop} : ~hprop -> hprop <~> Empty.
+Lemma my_lemma {A B} (e : A <~> B) : e oE 1 = e.
+Lemma my_lemma {A B} (e : A <~> B) : 1 oE e = e.
+Lemma my_lemma {A B} (e : A <~> B) : e oE e^-1 = 1.
+Lemma my_lemma {A B} (e : A <~> B) : e^-1 oE e = 1.
+Lemma my_lemma A a y P (X : P a) (H : a = y :> A) : P y.
+Lemma my_lemma A a y P (X : P y) (H : a = y :> A) : P a.
+Lemma my_lemma (a : Card) : exp_card 0 a = 1.
+Lemma my_lemma (a : Card) : exp_card a 1 = 1.
+Lemma my_lemma (a : Card) : exp_card 1 a = a.
+Lemma my_lemma : forall n:nat, n = n + 0.
+Lemma my_lemma : forall n m:nat, (n + m).+1 = n + m.+1.
+Lemma my_lemma : forall {x y}, x <= y -> y <= x -> x = y.
+Lemma my_lemma {T : Type} (falso: Empty) : T.
+Lemma my_lemma `{Funext} : Bool <~> (Bool <~> Bool).
+Lemma my_lemma {A B : Type} (m : A -> B) : IsEmbedding m -> isinj m.
+Lemma my_lemma `{Funext} {X Y} (f : X -> Y) : isinj f -> ismono f.
+Lemma my_lemma (P:A-> Type): (sigT P) <~> (Pullback P (@pr1 _ (fun u :Type => u))).
+Lemma my_lemma (X Y : pType) : loops (X * Y) <~>* loops X * loops Y.
+Lemma my_lemma `{Funext} {G : Group} : IsSurjection ab.
+Lemma my_lemma : forall n:nat, n = n + 0.
+Lemma my_lemma : forall n:nat, 0 + n = n.
+Lemma my_lemma : forall n m:nat, S (n + m) = n + S m.
+Lemma my_lemma : forall n m:nat, S n + m = S (n + m).
+Lemma my_lemma : forall n:nat, 0 = n * 0.
+Lemma my_lemma : forall n m:nat, n * m + n = n * S m.
+Lemma my_lemma : identity x y -> identity y x.
+Lemma my_lemma : identity x y -> identity y z -> identity x z.
+Lemma my_lemma : identity x y -> identity (f x) (f y).
+Lemma my_lemma : notT (identity x y) -> notT (identity y x).

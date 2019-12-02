@@ -15,6 +15,7 @@ You can reach me via:
 
 * [SIGSEGv2](#memetagging)
     * [Memetagging](#memetagging)
+    * [Coqhell](#coqhell)
 
 * [SIGSEGv2 Quals](#rektsa)
     * [RektSA](#rektsa)
@@ -38,6 +39,20 @@ Tag: **Reverse**, **VM**, **Crypto**, **Pwn**
 ### Write-ups
 
 * [Solving script](SIGSEGv2/Memetagging/solve.py)
+
+## Memetagging
+
+Difficulty: **★★☆☆☆**
+Solved: **0 / 26**
+Tag: **Coq**, **Misc**
+
+### Source Code
+
+* [Source](SIGSEGv2/Coqhell)
+
+### Write-ups
+
+* [Solving script](SIGSEGv2/Coqhell/solve.py)
 
 ## RektSA
 
