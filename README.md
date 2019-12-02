@@ -13,6 +13,9 @@ You can reach me via:
 
 ## Table of contents
 
+* [SIGSEGv2](#memetagging)
+    * [Memetagging](#memetagging)
+
 * [SIGSEGv2 Quals](#rektsa)
     * [RektSA](#rektsa)
     * [Efficiency](#efficiency)
@@ -21,6 +24,20 @@ You can reach me via:
 
 * [SIGSEGv1](#production-debugging)
     * [Production Debugging](#production-debugging)
+
+## Memetagging
+
+Difficulty: **★★★★☆**
+Solved: **0 / 26**
+Tag: **Reverse**, **VM**, **Crypto**, **Pwn**
+
+### Source Code
+
+* [Source](SIGSEGv2/Memetagging)
+
+### Write-ups
+
+* [Solving script](SIGSEGv2/Memetagging/solve.py)
 
 ## RektSA
 
