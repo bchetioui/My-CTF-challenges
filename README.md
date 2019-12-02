@@ -28,8 +28,8 @@ You can reach me via:
 
 ## Memetagging
 
-Difficulty: **★★★★☆**
-Solved: **0 / 26**
+Difficulty: **★★★★☆**  
+Solved: **0 / 26**  
 Tag: **Reverse**, **VM**, **Crypto**, **Pwn**
 
 ### Source Code
@@ -40,10 +40,10 @@ Tag: **Reverse**, **VM**, **Crypto**, **Pwn**
 
 * [Solving script](SIGSEGv2/Memetagging/solve.py)
 
-## Memetagging
+## Coqhell
 
-Difficulty: **★★☆☆☆**
-Solved: **0 / 26**
+Difficulty: **★★☆☆☆**  
+Solved: **0 / 26**  
 Tag: **Coq**, **Misc**
 
 ### Source Code
